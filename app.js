@@ -32,7 +32,7 @@ const runQueries = async () => {
     console.log('Queries running.')
     // The functions calls to run queries in our db will go here as we write them.
       await findCustomers();
-    //   await createCustomer();
+      await createCustomer();
   };
   
   connect()
@@ -40,8 +40,8 @@ const runQueries = async () => {
 
   const createCustomer = async () => {
     const customerData = {
-        name: 'Mica',
-        age: 15,
+        name: 'Arash',
+        age: 35,
     }
 
     const customer = await Customer.create(customerData) // how data is created on MongoDB
